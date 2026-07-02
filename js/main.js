@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('back-to-top').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
     // Typing effect
-    const typingSequence = ['An AI/ML Researcher', 'A Full-Stack Developer', 'A Federated Learning Engineer', 'A Deep Learning Enthusiast', 'A Published Author', 'A UI/UX Designer', 'A Problem Solver'];
+    const typingSequence = ['An AI/ML Researcher', 'A Full-Stack Developer', 'A UI/UX & Graphics Designer', 'A Problem Solver'];
     let sIdx = 0, cIdx = 0, del = false;
     const type = () => {
         const str = typingSequence[sIdx];
@@ -297,6 +297,7 @@ if (contactForm) {
 
             name: contactForm.querySelector('[name="name"]').value.trim(),
             email: contactForm.querySelector('[name="email"]').value.trim(),
+            replyto: contactForm.querySelector('[name="email"]').value.trim(),
             message: contactForm.querySelector('[name="message"]').value.trim()
         });
 
@@ -396,4 +397,129 @@ document.addEventListener('DOMContentLoaded', function () {
     expItems.forEach(function (item) {
         expObserver.observe(item);
     });
+});
+
+// ================= LEGAL MODAL =================
+
+const legalContent = {
+    privacy: {
+        title: "Privacy Policy",
+        body: `
+            <p>Last updated: July 2026</p>
+
+            <h4>Overview</h4>
+            <p>This portfolio website is owned and maintained by Rashedul Hasan Shohan. This website is used to showcase my work, projects, research, skills, and contact information.</p>
+
+            <h4>Information Collected</h4>
+            <p>When you submit the contact form, the information you provide may include your name, email address, and message.</p>
+
+            <h4>How Your Information Is Used</h4>
+            <p>Your information is used only to respond to your message or inquiry. I do not sell, rent, or trade your personal information.</p>
+
+            <h4>Third-Party Services</h4>
+            <p>This website may use third-party services such as Web3Forms for contact form submission, Google Fonts for typography, and map tile services for displaying the map.</p>
+
+            <h4>Contact</h4>
+            <p>For privacy-related questions, please contact me through the contact form on this website.</p>
+        `
+    },
+
+    terms: {
+        title: "Terms of Use",
+        body: `
+            <p>Last updated: July 2026</p>
+
+            <h4>Use of Website</h4>
+            <p>This website is provided for portfolio, academic, professional, and informational purposes only.</p>
+
+            <h4>Content Ownership</h4>
+            <p>All portfolio content, including text, design, project descriptions, and research summaries, belongs to Rashedul Hasan Shohan unless otherwise stated.</p>
+
+            <h4>External Links</h4>
+            <p>This website may contain links to external platforms such as GitHub, LinkedIn, research papers, or project repositories. I am not responsible for the content or policies of external websites.</p>
+
+            <h4>No Warranty</h4>
+            <p>The content is provided as-is. I try to keep the information accurate and updated, but I do not guarantee that all information will always be complete or error-free.</p>
+        `
+    },
+
+    cookies: {
+        title: "Cookie Policy",
+        body: `
+            <p>Last updated: July 2026</p>
+
+            <h4>Cookies and Local Storage</h4>
+            <p>This website does not use advertising cookies. It may use local storage to remember your dark/light theme preference.</p>
+
+            <h4>Third-Party Services</h4>
+            <p>Some third-party services used on this website may use cookies or similar technologies, such as Google Fonts, map services, or form submission services.</p>
+
+            <h4>Managing Cookies</h4>
+            <p>You can manage or disable cookies from your browser settings. Disabling cookies should not affect the main portfolio browsing experience.</p>
+        `
+    },
+
+    sitemap: {
+        title: "Sitemap",
+        body: `
+            <p>Use these links to quickly navigate through the portfolio:</p>
+
+            <ul>
+                <li><a href="#home" onclick="closeLegalModal()">Home</a></li>
+                <li><a href="#about" onclick="closeLegalModal()">About</a></li>
+                <li><a href="#experience" onclick="closeLegalModal()">Experience</a></li>
+                <li><a href="#skills" onclick="closeLegalModal()">Skills</a></li>
+                <li><a href="#education" onclick="closeLegalModal()">Education</a></li>
+                <li><a href="#projects" onclick="closeLegalModal()">Projects</a></li>
+                <li><a href="#research" onclick="closeLegalModal()">Research</a></li>
+                <li><a href="#services" onclick="closeLegalModal()">Services</a></li>
+                <li><a href="#blog" onclick="closeLegalModal()">Blog</a></li>
+                <li><a href="#contact" onclick="closeLegalModal()">Contact</a></li>
+            </ul>
+        `
+    }
+};
+
+function openLegalModal(type) {
+    const modal = document.getElementById("legal-modal");
+    const title = document.getElementById("legal-modal-title");
+    const body = document.getElementById("legal-modal-body");
+
+    if (!modal || !title || !body || !legalContent[type]) return;
+
+    title.textContent = legalContent[type].title;
+    body.innerHTML = legalContent[type].body;
+
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+
+    document.body.style.overflow = "hidden";
+}
+
+function closeLegalModal() {
+    const modal = document.getElementById("legal-modal");
+
+    if (!modal) return;
+
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+
+    document.body.style.overflow = "";
+}
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+        closeLegalModal();
+    }
+});
+
+document.addEventListener("click", function (event) {
+    const modal = document.getElementById("legal-modal");
+    const card = document.querySelector(".legal-modal-card");
+
+    if (!modal || modal.classList.contains("hidden")) return;
+
+    if (modal.contains(event.target) && card && !card.contains(event.target)) {
+        closeLegalModal();
+    }
 });

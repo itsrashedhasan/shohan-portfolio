@@ -1212,4 +1212,194 @@
     #experience article .text-xs span {
         font-size: 0.68rem;
     }
+
+
+    /* ================= LEGAL MODAL ================= */
+
+#legal-modal {
+    animation: legalFadeIn .2s ease;
+}
+
+.legal-modal-card {
+    animation: legalSlideUp .25s ease;
+}
+
+#legal-modal-body h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(15 23 42);
+    margin-top: 1rem;
+    margin-bottom: 0.35rem;
+}
+
+.dark #legal-modal-body h4 {
+    color: #ffffff;
+}
+
+#legal-modal-body p {
+    margin-bottom: 0.85rem;
+}
+
+#legal-modal-body ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin-bottom: 0.85rem;
+}
+
+#legal-modal-body a {
+    color: rgb(2 132 199);
+    font-weight: 600;
+}
+
+@keyframes legalFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes legalSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ================= LEGAL MODAL DESKTOP FIX ONLY ================= */
+/* Mobile stays unchanged. This fixes only desktop/tablet screen. */
+
+@media (min-width: 768px) {
+
+    /* Overlay */
+    #legal-modal {
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 2rem !important;
+    }
+
+    /* Make desktop modal dark like mobile */
+    #legal-modal .legal-modal-card {
+        width: min(650px, calc(100vw - 4rem)) !important;
+        max-height: 86vh !important;
+        border-radius: 1.25rem !important;
+        overflow: hidden !important;
+        margin: 0 auto !important;
+
+        background: rgba(2, 6, 23, 0.88) !important;
+        border: 1px solid rgba(51, 65, 85, 0.9) !important;
+        box-shadow: 0 28px 80px rgba(0, 0, 0, 0.45) !important;
+
+        backdrop-filter: blur(14px) !important;
+        -webkit-backdrop-filter: blur(14px) !important;
+    }
+
+    /* Header */
+    #legal-modal .legal-modal-card > div:first-child {
+        padding: 1.5rem 2rem !important;
+        border-bottom: 1px solid rgba(51, 65, 85, 0.9) !important;
+        background: rgba(2, 6, 23, 0.35) !important;
+    }
+
+    #legal-modal-title {
+        color: #ffffff !important;
+        font-size: 1.7rem !important;
+        line-height: 1.25 !important;
+        font-weight: 800 !important;
+    }
+
+    #legal-modal button[aria-label="Close legal modal"] {
+        color: #e5e7eb !important;
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+        font-size: 1.6rem !important;
+        flex-shrink: 0 !important;
+    }
+
+    #legal-modal button[aria-label="Close legal modal"]:hover {
+        background: rgba(51, 65, 85, 0.75) !important;
+    }
+
+    /* Body */
+    #legal-modal-body {
+        max-height: calc(86vh - 88px) !important;
+        overflow-y: auto !important;
+
+        padding: 1.7rem 2rem !important;
+        color: #d1d5db !important;
+
+        font-size: 1rem !important;
+        line-height: 1.75 !important;
+        text-align: left !important;
+    }
+
+    /* Paragraph spacing */
+    #legal-modal-body p {
+        color: #d1d5db !important;
+        margin: 0 0 1.25rem 0 !important;
+        font-size: 1rem !important;
+        line-height: 1.75 !important;
+        text-align: left !important;
+    }
+
+    /* Headings like mobile */
+    #legal-modal-body h4 {
+        display: block !important;
+        color: #ffffff !important;
+        margin: 1.35rem 0 0.55rem 0 !important;
+        font-size: 1.15rem !important;
+        line-height: 1.35 !important;
+        font-weight: 800 !important;
+        text-align: left !important;
+    }
+
+    #legal-modal-body h4:first-child {
+        margin-top: 0 !important;
+    }
+
+    /* Sitemap/list bullets */
+    #legal-modal-body ul {
+        list-style-type: disc !important;
+        list-style-position: outside !important;
+        padding-left: 1.5rem !important;
+        margin: 0.75rem 0 1rem 0 !important;
+    }
+
+    #legal-modal-body li {
+        display: list-item !important;
+        color: #d1d5db !important;
+        margin-bottom: 0.35rem !important;
+        font-size: 1rem !important;
+        line-height: 1.55 !important;
+    }
+
+    #legal-modal-body a {
+        color: #0ea5e9 !important;
+        font-weight: 700 !important;
+        text-decoration: none !important;
+    }
+
+    #legal-modal-body a:hover {
+        color: #38bdf8 !important;
+    }
+
+    /* Scrollbar like mobile dark style */
+    #legal-modal-body::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    #legal-modal-body::-webkit-scrollbar-track {
+        background: rgba(15, 23, 42, 0.9);
+    }
+
+    #legal-modal-body::-webkit-scrollbar-thumb {
+        background: rgba(148, 163, 184, 0.7);
+        border-radius: 999px;
+    }
+}
 }
