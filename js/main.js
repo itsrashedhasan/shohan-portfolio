@@ -290,9 +290,15 @@ if (contactForm) {
         }
 
         try {
-            const formData = new FormData(contactForm);
-            const object = Object.fromEntries(formData);
-            const json = JSON.stringify(object);
+            const json = JSON.stringify({
+            access_key: "06d27366-bb20-42e7-a8b3-44f8a18cb1e2",
+            subject: "New Portfolio Message from Rashedul Hasan Shohan Website",
+            from_name: "Rashedul Hasan Shohan Portfolio",
+
+            name: contactForm.querySelector('[name="name"]').value.trim(),
+            email: contactForm.querySelector('[name="email"]').value.trim(),
+            message: contactForm.querySelector('[name="message"]').value.trim()
+        });
 
             const response = await fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
