@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Portfolio Preview](assets\images\preview.PNG)
+![Shohan Portfolio Preview](https://raw.githubusercontent.com/itsrashedhasan/shohan-portfolio/main/assets/images/preview.PNG)
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Portfolio-sky?style=for-the-badge&logo=github)](https://itsrashedhasan.github.io/shohan-portfolio/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/itsrashedhasan)
@@ -25,7 +25,7 @@ Built with **pure HTML, CSS, and vanilla JavaScript** — no frameworks, no buil
 
 ## 🧑‍💻 About Me
 
-I'm **Rashedul Hasan Shohan** — an AI/ML researcher and full-stack developer from Dhaka, Bangladesh. I'm a final-year B.Sc. CSE student at **Daffodil International University** (CGPA: 3.84/4.00), with a focus on federated learning, medical image segmentation, and explainable AI.
+I'm **Rashedul Hasan Shohan** — an AI/ML researcher and full-stack developer from Dhaka, Bangladesh.
 
 - 📄 **2 accepted international papers** — Springer LNNS (SCOPUS) & IEEE/IFAC
 - 🔬 **Active B.Sc. thesis** targeting IEEE Transactions on Medical Imaging
