@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Portfolio Preview](assets/images/preview.png)
+![Portfolio Preview](assets\images\preview.PNG)
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Portfolio-sky?style=for-the-badge&logo=github)](https://itsrashedhasan.github.io/shohan-portfolio/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/itsrashedhasan)
