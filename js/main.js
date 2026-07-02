@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Select the form and the toast elements ==============================================================
 
-// Contact form submit with Web3Forms
+// Contact form submit with Web3Forms Free Plan
 const contactForm = document.getElementById('contact-form');
 const successToast = document.getElementById('success-toast');
 const closeToastBtn = document.getElementById('close-toast-btn');
@@ -291,18 +291,21 @@ if (contactForm) {
 
         try {
             const formData = new FormData(contactForm);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
 
-            const response = await fetch(contactForm.action, {
+            const response = await fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
-                body: formData,
                 headers: {
+                    'Content-Type': 'application/json',
                     'Accept': 'application/json'
-                }
+                },
+                body: json
             });
 
             const result = await response.json();
 
-            if (result.success) {
+            if (result.success || response.status === 200) {
                 contactForm.reset();
                 showToast();
             } else {
