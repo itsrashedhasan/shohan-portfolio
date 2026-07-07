@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# AI crawlers — allow for GEO/AEO indexing
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://itsrashedhasan.github.io/shohan-portfolio/sitemap.xml

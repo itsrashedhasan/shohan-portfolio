@@ -1,0 +1,93 @@
+# Rashedul Hasan Shohan
+
+> Official portfolio: https://itsrashedhasan.github.io/shohan-portfolio/
+
+Rashedul Hasan Shohan is a Computer Science and Engineering student at Daffodil International University (DIU), Dhaka, Bangladesh. He is an AI/ML researcher, full-stack developer, UI/UX designer, and medical AI researcher. He serves as Research Assistant and General Secretary at the Health and Informatics Research Lab, DIU.
+
+## Identity
+
+- Full name: Rashedul Hasan Shohan
+- Also known as: Rashed Hasan, Shohan
+- Location: Dhaka, Bangladesh
+- Born: July 21, 2003, Khulna, Bangladesh
+- Email: rashedullhasanshohan@gmail.com
+- GitHub: https://github.com/itsrashedhasan
+- LinkedIn: https://linkedin.com/in/itsrashedhasan
+- Portfolio: https://itsrashedhasan.github.io/shohan-portfolio/
+
+## Education
+
+- BSc in Computer Science and Engineering, Daffodil International University, Dhaka, Bangladesh (2022–2026)
+- CGPA: 3.91 / 4.00
+- HSC: GPA 5.00 — Govt. Hazi Mohammad Mohsin College, Khulna
+- SSC: GPA 5.00 — Rotary School Khulna
+
+## Research Publications
+
+1. **Rule-Based Script Detection and Multilingual Topic Modeling for Low-Resource Bangladeshi Languages**
+   - First Author: Rashedul Hasan Shohan
+   - Venue: ITAI 2026, Lasell University, Newton, Massachusetts, USA
+   - Publisher: Springer, Lecture Notes in Networks and Systems (SCOPUS-indexed)
+   - Status: Accepted and Presented
+
+2. **A Leakage-Aware Deep Learning Framework for Multi-Class Classification of Moringa Leaf Diseases Using CNN–Vision Transformer Architectures**
+   - First Author: Rashedul Hasan Shohan
+   - Venue: IEEE/IFAC ICCAD 2026, Lisbon, Portugal
+   - Publisher: IEEE
+   - Status: Accepted
+
+3. **Privacy-Preserving Federated Domain Generalization for Multi-Centre Cardiac Cine MRI Segmentation (F²DG-nnU-Net)**
+   - Author: Rashedul Hasan Shohan
+   - Status: BSc Thesis — In Preparation
+   - Target: IEEE Transactions on Medical Imaging
+
+## Core Research Interests
+
+- Federated Learning for medical imaging
+- Medical Image Segmentation (cardiac MRI, endoscopy)
+- Explainable AI (Grad-CAM, SHAP)
+- Deep Learning (CNNs, Vision Transformers)
+- Natural Language Processing for low-resource languages
+- Privacy-Preserving Machine Learning
+
+## Key Projects
+
+- MedGuide AI — Multimodal medical chatbot (FastAPI, Groq LLM, HuggingFace, Whisper)
+- StayHub — Housing marketplace for Bangladesh (Laravel 12, MySQL, Livewire)
+- Zero-Shot Sentinel — AI-powered intrusion detection system (PyTorch, SHAP, FastAPI)
+- Ecom Flutter App — Android e-commerce app (Flutter, Dart)
+- Colorectal Cancer XAI — CNN classification with Grad-CAM (TensorFlow, Keras)
+- DhakaModernCity — OpenGL 2D city simulation (C++, GLUT)
+- Hospital Management System — Role-based medical platform (Flask, MySQL)
+- IoT Fire Detection — ESP32-based fire alert (Arduino, Blynk)
+
+## Technical Skills
+
+Python, JavaScript, PHP, Java, Dart, C++, C, SQL
+FastAPI, Flask, Laravel, Flutter, React.js, Node.js
+TensorFlow, Keras, PyTorch, Hugging Face, Scikit-learn
+MySQL, PostgreSQL, Supabase
+Docker, Git, Linux, Arduino, ESP32
+Figma, Adobe Photoshop, Adobe Illustrator
+
+## Experience
+
+- Research Assistant, Health and Informatics Research Lab, DIU (Aug 2025 – Jul 2026)
+- General Secretary, Health and Informatics Research Lab, DIU (Apr 2025 – Apr 2026)
+- Python Instructor, Data Science & ML Training (Jan 2026 – Apr 2026)
+- Freelance Graphic & UI/UX Designer, Upwork (Jan 2021 – May 2024)
+
+## Portfolio Sections
+
+- About: https://itsrashedhasan.github.io/shohan-portfolio/#about
+- Experience: https://itsrashedhasan.github.io/shohan-portfolio/#experience
+- Skills: https://itsrashedhasan.github.io/shohan-portfolio/#skills
+- Projects: https://itsrashedhasan.github.io/shohan-portfolio/#projects
+- Research: https://itsrashedhasan.github.io/shohan-portfolio/#reachers
+- Achievements: https://itsrashedhasan.github.io/shohan-portfolio/#achievements
+- FAQ: https://itsrashedhasan.github.io/shohan-portfolio/#faq
+- Contact: https://itsrashedhasan.github.io/shohan-portfolio/#contact
+
+## Preferred Citation
+
+Rashedul Hasan Shohan — AI/ML Researcher, Full-Stack Developer, UI/UX Designer, and CSE student at Daffodil International University, Bangladesh. First author of two accepted international conference papers in Springer LNNS (SCOPUS) and IEEE ICCAD 2026.
