@@ -523,3 +523,258 @@ document.addEventListener("click", function (event) {
         closeLegalModal();
     }
 });
+
+
+
+// Project carousel: native smooth swipe + button control
+(function projectCarousel() {
+    const init = () => {
+        const carousel = document.querySelector('[data-project-carousel]');
+        if (!carousel) return;
+
+        const viewport = carousel.querySelector('.project-carousel-viewport');
+        const track = carousel.querySelector('.project-carousel-track');
+        const cards = Array.from(carousel.querySelectorAll('.project-card'));
+        const prevBtn = carousel.querySelector('[data-project-prev]');
+        const nextBtn = carousel.querySelector('[data-project-next]');
+        const dotsWrap = carousel.querySelector('[data-project-dots]');
+
+        if (!viewport || !track || cards.length === 0 || !prevBtn || !nextBtn || !dotsWrap) return;
+
+        let index = 0;
+        let cardsPerView = 1;
+        let maxIndex = 0;
+        let scrollRaf = null;
+
+        const getCardsPerView = () => {
+            return window.matchMedia('(min-width: 769px)').matches ? 2 : 1;
+        };
+
+        const getGap = () => {
+            return parseFloat(getComputedStyle(track).gap || 0);
+        };
+
+        const getStep = () => {
+            const cardWidth = cards[0].getBoundingClientRect().width;
+            return (cardWidth + getGap()) * cardsPerView;
+        };
+
+        const getMaxScroll = () => {
+            return viewport.scrollWidth - viewport.clientWidth;
+        };
+
+        const buildDots = () => {
+            dotsWrap.innerHTML = '';
+
+            for (let i = 0; i <= maxIndex; i += 1) {
+                const dot = document.createElement('button');
+                dot.type = 'button';
+                dot.className = 'project-carousel-dot';
+                dot.setAttribute('aria-label', `Go to project slide ${i + 1}`);
+
+                dot.addEventListener('click', () => {
+                    index = i;
+                    scrollToIndex(true);
+                });
+
+                dotsWrap.appendChild(dot);
+            }
+        };
+
+        const updateUI = () => {
+            prevBtn.disabled = index === 0;
+            nextBtn.disabled = index === maxIndex;
+
+            Array.from(dotsWrap.children).forEach((dot, dotIndex) => {
+                dot.classList.toggle('active', dotIndex === index);
+                dot.setAttribute('aria-current', dotIndex === index ? 'true' : 'false');
+            });
+        };
+
+        const refresh = () => {
+            cardsPerView = getCardsPerView();
+            maxIndex = Math.max(0, Math.ceil(cards.length / cardsPerView) - 1);
+            index = Math.min(index, maxIndex);
+
+            if (dotsWrap.children.length !== maxIndex + 1) {
+                buildDots();
+            }
+
+            updateUI();
+        };
+
+        const scrollToIndex = (smooth = true) => {
+            refresh();
+
+            const targetLeft = Math.min(index * getStep(), getMaxScroll());
+
+            viewport.scrollTo({
+                left: targetLeft,
+                behavior: smooth ? 'smooth' : 'auto'
+            });
+
+            updateUI();
+        };
+
+        const syncIndexFromScroll = () => {
+            const step = getStep();
+            if (step <= 0) return;
+
+            const newIndex = Math.round(viewport.scrollLeft / step);
+            index = Math.min(Math.max(newIndex, 0), maxIndex);
+
+            updateUI();
+        };
+
+        prevBtn.addEventListener('click', () => {
+            if (index <= 0) return;
+            index -= 1;
+            scrollToIndex(true);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (index >= maxIndex) return;
+            index += 1;
+            scrollToIndex(true);
+        });
+
+        viewport.addEventListener('scroll', () => {
+            if (scrollRaf) cancelAnimationFrame(scrollRaf);
+
+            scrollRaf = requestAnimationFrame(() => {
+                syncIndexFromScroll();
+            });
+        }, { passive: true });
+
+        window.addEventListener('resize', () => {
+            refresh();
+            scrollToIndex(false);
+        }, { passive: true });
+
+        cards.forEach(card => {
+            card.setAttribute('draggable', 'false');
+        });
+
+        refresh();
+        scrollToIndex(false);
+    };
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+
+// Research card Abstract + BibTeX open/close + copy BibTeX
+(function researchDetails() {
+    const init = () => {
+        const researchSection = document.getElementById('reachers');
+        if (!researchSection) return;
+
+        const closeCard = (card) => {
+            card.classList.remove('detail-open', 'show-abstract', 'show-bibtex');
+            card.querySelectorAll('[data-research-action]').forEach(btn => {
+                btn.classList.remove('active');
+            });
+        };
+
+        const openCard = (card, type, clickedButton) => {
+            const isSameOpen =
+                card.classList.contains('detail-open') &&
+                card.classList.contains(type === 'abstract' ? 'show-abstract' : 'show-bibtex');
+
+            researchSection.querySelectorAll('.research-card.detail-open').forEach(openCardItem => {
+                if (openCardItem !== card) closeCard(openCardItem);
+            });
+
+            card.querySelectorAll('[data-research-action]').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            if (isSameOpen) {
+                closeCard(card);
+                return;
+            }
+
+            card.classList.add('detail-open');
+            card.classList.toggle('show-abstract', type === 'abstract');
+            card.classList.toggle('show-bibtex', type === 'bibtex');
+            clickedButton.classList.add('active');
+        };
+
+        researchSection.addEventListener('click', async (event) => {
+            const actionBtn = event.target.closest('[data-research-action]');
+            const closeBtn = event.target.closest('[data-research-close]');
+            const copyBtn = event.target.closest('[data-copy-bibtex]');
+
+            if (actionBtn) {
+                const card = actionBtn.closest('.research-card');
+                const type = actionBtn.getAttribute('data-research-action');
+
+                if (!card || !type) return;
+
+                openCard(card, type, actionBtn);
+                return;
+            }
+
+            if (closeBtn) {
+                const card = closeBtn.closest('.research-card');
+                if (card) closeCard(card);
+                return;
+            }
+
+            if (copyBtn) {
+                const card = copyBtn.closest('.research-card');
+                const code = card?.querySelector('.research-bibtex-content code');
+
+                if (!code) return;
+
+                const bibtex = code.innerText.trim();
+                const originalText = copyBtn.textContent;
+
+                try {
+                    if (navigator.clipboard && window.isSecureContext) {
+                        await navigator.clipboard.writeText(bibtex);
+                    } else {
+                        const temp = document.createElement('textarea');
+                        temp.value = bibtex;
+                        temp.style.position = 'fixed';
+                        temp.style.left = '-9999px';
+                        document.body.appendChild(temp);
+                        temp.focus();
+                        temp.select();
+                        document.execCommand('copy');
+                        temp.remove();
+                    }
+
+                    copyBtn.textContent = 'Copied!';
+                    copyBtn.classList.add('copied');
+
+                    setTimeout(() => {
+                        copyBtn.textContent = originalText;
+                        copyBtn.classList.remove('copied');
+                    }, 1600);
+                } catch (error) {
+                    copyBtn.textContent = 'Copy Failed';
+
+                    setTimeout(() => {
+                        copyBtn.textContent = originalText;
+                    }, 1600);
+                }
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                researchSection.querySelectorAll('.research-card.detail-open').forEach(closeCard);
+            }
+        });
+    };
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();

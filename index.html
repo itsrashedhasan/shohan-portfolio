@@ -72,7 +72,8 @@
                 <a href="#education"
                     class="nav-link text-slate-700 dark:text-slate-300 hover:text-sky-600">Education</a>
                 <a href="#projects" class="nav-link text-slate-700 dark:text-slate-300 hover:text-sky-600">Projects</a>
-                <a href="#reachers" class="nav-link text-slate-700 dark:text-slate-300 hover:text-sky-600">Research</a>
+                <a href="#research" class="nav-link text-slate-700 dark:text-slate-300 hover:text-sky-600">Research</a>
+                <a href="#achievements" class="nav-link text-slate-700 dark:text-slate-300 hover:text-sky-600">Achievements</a>
                 <a href="#services" class="nav-link text-slate-700 dark:text-slate-300 hover:text-sky-600">Services</a>
                 <a href="#blog" class="nav-link text-slate-700 dark:text-slate-300 hover:text-sky-600">Blog</a>
                 <a href="#contact" class="nav-link text-slate-700 dark:text-slate-300 hover:text-sky-600">Contact</a>
@@ -107,6 +108,7 @@
                 <a href="#projects" class="nav-link py-2">Projects</a>
 
                 <a href="#reachers" class="nav-link py-2">Research</a>
+                <a href="#achievements" class="nav-link py-2">Achievements</a>
                 <a href="#services" class="nav-link py-2">Services</a>
                 <a href="#blog" class="nav-link py-2">Blog</a>
                 <a href="#contact" class="nav-link py-2">Contact</a>
@@ -160,6 +162,7 @@
 
         <!-- ABOUT -->
         <section id="about" class="section py-24">
+            <div class="background-blob"></div>
             <div class="max-w-7xl mx-auto px-4">
                 <h2 class="text-4xl font-bold text-center mb-8 text-slate-900 dark:text-white">About Me</h2>
 
@@ -629,442 +632,1175 @@
             </div>
         </section>
 
-        <!-- PROJECTS -->
-        <section id="projects" class="section py-24 bg-slate-200 dark:bg-slate-800/100">
-            <div class="project-background"></div>
-            <div class="max-w-7xl mx-auto px-4">
-                <h2 class="text-4xl font-bold text-center mb-12 text-slate-900 dark:text-white">My Projects</h2>
-                <div class="grid md:grid-cols-2 gap-6">
+<!-- Projects -->
+<section id="projects" class="section py-24 bg-slate-200 dark:bg-slate-800/100">
+    <div class="project-background"></div>
 
-                    <!-- 1. MedGuide AI -->
-                    <a href="https://github.com/itsrashedhasan/medguide-ai" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            MedGuide AI — Multimodal Medical Chatbot</h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">AI-powered medical assistant with 4
-                            integrated pipelines: Groq LLM symptom triage, HuggingFace medical image analysis
-                            (X-ray/MRI/CT), OpenAI Whisper voice interaction (English + Bangla), and BioBERT Q&amp;A.
-                            &gt;90% triage accuracy, WER &lt;8%.</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">FastAPI</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Groq
-                                LLM</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Whisper
-                                STT</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">HuggingFace</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">PostgreSQL</span>
-                        </div>
-                    </a>
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="text-center mb-10">
+            <h2 class="text-4xl font-bold text-slate-900 dark:text-white">My Projects</h2>
+        </div>
 
-                    <!-- 2. StayHub -->
-                    <a href="https://github.com/itsrashedhasan/StayHub" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            StayHub — Housing Marketplace for Bangladesh</h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">Structured marketplace for students and
-                            workers to find affordable long-stay housing. Features 4-stage booking with escrow
-                            simulation, KYC owner verification, Livewire real-time search, and a 3-role access control
-                            system.</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Laravel
-                                12</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">PHP
-                                8.2</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">MySQL</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Livewire</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Tailwind
-                                CSS</span>
-                        </div>
-                    </a>
+        <div class="project-carousel" data-project-carousel>
+            <div class="project-carousel-header">
+                <div class="project-carousel-controls" aria-label="Project carousel controls">
+                    <button type="button" class="project-carousel-btn" data-project-prev aria-label="Previous projects">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 18l-6-6 6-6"></path>
+                        </svg>
+                    </button>
 
-                    <!-- 3. Ecom Flutter App -->
-                    <a href="https://github.com/itsrashedhasan/Ecom" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            Ecom — Flutter E-Commerce Mobile App</h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">Full-featured Android e-commerce app with
-                            feature-based architecture (38 Dart files, 16 modules), singleton CartService, 17-field
-                            Product model, 13 pub.dev packages. Tested on real Pixel 7 Pro device and published on
-                            itch.io.</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Flutter</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Dart</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Android</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">ChangeNotifier</span>
-                        </div>
-                    </a>
+                    <button type="button" class="project-carousel-btn" data-project-next aria-label="Next projects">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18l6-6-6-6"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
 
-                    <!-- 4. Colorectal Cancer XAI -->
-                    <a href="https://github.com/itsrashedhasan/colorectal-cancer-xai" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            Explainable Deep Learning for Colorectal Cancer Diagnosis</h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">Benchmarks 6 CNN architectures on 8,750
-                            endoscopic images across 14 pathology classes. EfficientNetB3 achieved 83.54% accuracy and
-                            macro AUC-ROC of 0.99. Grad-CAM XAI confirms clinically relevant model focus. Full
-                            IEEE-style paper.</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">TensorFlow</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Keras</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Grad-CAM</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Transfer
-                                Learning</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Medical
-                                AI</span>
-                        </div>
-                    </a>
+            <div class="project-carousel-viewport">
+                <div class="project-carousel-track">
 
-                    <!-- 5. Zero-Shot Sentinel (Hackathon) -->
+                    <!-- Project 01 -->
                     <a href="https://github.com/itsrashedhasan/zero-shot-sentinel" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            Zero-Shot Sentinel — Explainable IDS (CanHack 2026)</h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">Intrusion detection system using Zero-Shot
-                            Learning to detect unseen network attacks. 92.1% accuracy, AUROC 0.94, 68% unseen-class
-                            detection vs. 0% baseline. SHAP-based explainability. Built for CanHack 2026, University of
-                            Canberra.</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">PyTorch</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">SHAP</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">FastAPI</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">React</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Docker</span>
-                            <span
-                                class="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 font-semibold px-2.5 py-1 rounded-full">🏆
-                                Hackathon</span>
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">2026</p>
+                                <p class="project-type text-right">Cybersecurity / AI</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                Zero-Shot Sentinel — Explainable IDS
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                Intrusion detection system using Zero-Shot Learning to detect unseen network attacks with SHAP-based explainability.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">PyTorch</span>
+                                <span class="project-tag">SHAP</span>
+                                <span class="project-tag">FastAPI</span>
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Docker</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
                         </div>
                     </a>
 
-                    <!-- 6. DhakaModernCity -->
+                    <!-- Project 02 -->
+                    <a href="https://github.com/itsrashedhasan/medguide-ai" target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">2026</p>
+                                <p class="project-type text-right">Medical AI</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                MedGuide AI — Multimodal Medical Chatbot
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                AI-powered medical assistant with symptom triage, medical image analysis, voice interaction, and medical Q&A support.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">FastAPI</span>
+                                <span class="project-tag">Groq LLM</span>
+                                <span class="project-tag">Whisper</span>
+                                <span class="project-tag">HuggingFace</span>
+                                <span class="project-tag">PostgreSQL</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 03 -->
+                    <a href="https://github.com/itsrashedhasan/StayHub" target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">2026</p>
+                                <p class="project-type text-right">Full-Stack Web</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                StayHub — Housing Marketplace
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                Long-stay housing marketplace with booking flow, KYC owner verification, real-time search, and role-based access.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">Laravel 12</span>
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">Livewire</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 04 -->
+                    <a href="https://github.com/itsrashedhasan/colorectal-cancer-xai" target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">2026</p>
+                                <p class="project-type text-right">Medical AI Research</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                Colorectal Cancer XAI
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                CNN-based colorectal cancer classification with Grad-CAM explainability for clinically meaningful model interpretation.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">CNN</span>
+                                <span class="project-tag">TensorFlow</span>
+                                <span class="project-tag">Grad-CAM</span>
+                                <span class="project-tag">Medical AI</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 05 -->
+                    <a href="https://github.com/itsrashedhasan/Ecom" target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">2026</p>
+                                <p class="project-type text-right">Mobile App</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                Ecom Flutter App
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                Android e-commerce application with product model, cart service, clean architecture, and mobile-first user flow.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">Flutter</span>
+                                <span class="project-tag">Dart</span>
+                                <span class="project-tag">Mobile UI</span>
+                                <span class="project-tag">Cart System</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 06 -->
                     <a href="https://github.com/itsrashedhasan/DhakaModernCity-OpenGL" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            DhakaModernCity — Interactive 2D Animated Urban Scene</h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">Interactive 2D city simulation with animated
-                            metro, vehicles, river boat, and smooth day/night transitions. 2,151-line scene engine with
-                            4 graphics algorithms (DDA, Bresenham, Midpoint Circle) implemented from scratch in
-                            C++/OpenGL.</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">C++</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">OpenGL</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">GLUT</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Computer
-                                Graphics</span>
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">2025</p>
+                                <p class="project-type text-right">Computer Graphics</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                DhakaModernCity — OpenGL
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                Interactive 2D city simulation with metro, vehicles, river boat, day/night transition, and OpenGL graphics algorithms.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">C++</span>
+                                <span class="project-tag">OpenGL</span>
+                                <span class="project-tag">Graphics</span>
+                                <span class="project-tag">Animation</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
                         </div>
                     </a>
 
-                    <!-- 7. Hospital Management System -->
+                    <!-- Project 07 -->
                     <a href="https://github.com/itsrashedhasan/hospital-management-system" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            Hospital Management System</h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">Full-stack web app with Python Flask backend,
-                            5-table MySQL schema, 3 audit triggers, 12 routes, and role-based dashboards for Patients,
-                            Doctors, and Admins. Handles 1,000+ records with sub-2s login response.</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Python</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Flask</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">MySQL</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">SQLAlchemy</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">RBAC</span>
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">2025</p>
+                                <p class="project-type text-right">Full-Stack Web</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                Hospital Management System
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                Flask and MySQL-based hospital management platform with patient, doctor, and admin role-based dashboards.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Flask</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">RBAC</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
                         </div>
                     </a>
 
-                    <!-- 8. Credit Card Fraud Detection -->
+                    <!-- Project 08 -->
                     <a href="https://github.com/itsrashedhasan/credit-card-fraud-detection-ml" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            Credit Card Fraud Detection</h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">End-to-end binary classification pipeline on
-                            284,807 transactions with extreme class imbalance (0.17% fraud). Post-SMOTE Random Forest:
-                            99.98% accuracy, AUC 1.00, Recall 1.0. Serialized model with live inference.</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Python</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Scikit-learn</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">SMOTE</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Random
-                                Forest</span>
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">2025</p>
+                                <p class="project-type text-right">Machine Learning</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                Credit Card Fraud Detection
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                Machine learning pipeline for fraud detection using imbalanced transaction data, SMOTE, and Random Forest.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Scikit-learn</span>
+                                <span class="project-tag">SMOTE</span>
+                                <span class="project-tag">Random Forest</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
                         </div>
                     </a>
 
-                    <!-- 9. RestoCafe -->
-                    <a href="https://youtu.be/TwdmiRSK3bw" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            RestoCafe — Restaurant Management System</h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">Full-featured Java desktop application with 8
-                            modules: user authentication, real-time sales dashboard with charts, menu &amp; order
-                            management, table reservation, inventory control, billing/payment, and customer feedback.
-                            Custom ScrollPane UI.</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Java</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Java
-                                Swing</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">MySQL</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">JDBC</span>
-                            <span
-                                class="bg-green-100 dark:bg-green-900/40 text-green-800 dark:text-green-300 font-semibold px-2.5 py-1 rounded-full">▶
-                                Demo</span>
-                        </div>
-                    </a>
-
-                    <!-- 10. IoT Fire Detection -->
-                    <a href="https://github.com/itsrashedhasan/iot-fire-detection" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            IoT Fire Detection System</h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">ESP32-powered real-time fire alert system
-                            using DHT11 (temp/humidity), MQ-2 smoke sensor, and IR flame sensor. Sends push
-                            notifications via Blynk IoT cloud. Non-blocking BlynkTimer firmware with 4 virtual data
-                            pins.</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">ESP32</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Arduino
-                                C++</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Blynk
-                                IoT</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Embedded
-                                Systems</span>
-                        </div>
-                    </a>
-
-                    <!-- 11. Telehealth Care -->
-                    <a href="https://github.com/itsrashedhasan/telehealth-care-platform" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            Telehealth Care — Telemedicine Web Platform</h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">Frontend healthcare platform (2,012+ lines
-                            across 3 HTML/CSS files) with appointment booking, video consultation, doctor profiles, and
-                            EHR sections. Includes a 21-page IEEE 830-compliant SRS document with 11 functional
-                            requirements.</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">HTML5
-                                / CSS3</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Bootstrap</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">JavaScript</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">IEEE
-                                SRS</span>
-                        </div>
-                    </a>
-
-                    <!-- 12. Linux Mail Server -->
+                    <!-- Project 09 -->
                     <a href="https://github.com/itsrashedhasan/linux-mail-server" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            Linux Mail Server (Postfix + Dovecot)</h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">Fully configured Linux mail server on Ubuntu
-                            24.04 with Postfix (MTA), Dovecot v2.3.21 (IMAP/POP3), and Mutt TUI client. Auto-provisioned
-                            Maildir for new users, SSL/TLS, and verified bidirectional email flow between test accounts.
-                        </p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Linux</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Postfix</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Dovecot</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">SMTP
-                                / IMAP</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Sysadmin</span>
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">2025</p>
+                                <p class="project-type text-right">Linux / System Admin</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                Linux Mail Server
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                Ubuntu mail server setup using Postfix, Dovecot, Maildir, SSL/TLS, and Mutt terminal client.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">Ubuntu</span>
+                                <span class="project-tag">Postfix</span>
+                                <span class="project-tag">Dovecot</span>
+                                <span class="project-tag">Linux</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 10 -->
+                    <a href="https://github.com/itsrashedhasan/iot-fire-detection" target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">2024</p>
+                                <p class="project-type text-right">IoT / Embedded</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                IoT Fire Detection System
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                ESP32 fire alert system using temperature, smoke, and flame sensors with Blynk IoT notification support.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">ESP32</span>
+                                <span class="project-tag">Arduino</span>
+                                <span class="project-tag">Blynk IoT</span>
+                                <span class="project-tag">Sensors</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 11 -->
+                    <a href="https://github.com/itsrashedhasan/telehealth-care-platform" target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">2024</p>
+                                <p class="project-type text-right">Frontend / SRS</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                Telehealth Care Platform
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                Frontend telemedicine platform with appointment booking, doctor profiles, video consultation sections, and SRS documentation.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">Bootstrap</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 12 — Waste Management System Dec 2024 -->
+                    <a href="https://github.com/itsrashedhasan/waste-management-system" target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">Dec 2024</p>
+                                <p class="project-type text-right">Python · OOP</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                Waste Management System
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                CLI-based waste management system with 4-class OOP architecture — Waste, CollectionSchedule, WasteCollector, WasteManagementSystem. Full CRUD operations with auto-load and auto-save to 3 Excel workbooks via openpyxl. Duplicate ID validation and cross-entity referencing.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">OOP</span>
+                                <span class="project-tag">openpyxl</span>
+                                <span class="project-tag">Excel</span>
+                                <span class="project-tag">CLI</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 13 — Temperature & Humidity Data Logger 2024 -->
+                    <a href="https://github.com/itsrashedhasan/temp-humidity-data-logger" target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">2024</p>
+                                <p class="project-type text-right">Embedded Systems · IoT</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                Temperature & Humidity Data Logger
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                Arduino Uno R3 system that reads DHT11 sensor data, timestamps via DS3231 RTC, logs CSV-format readings to SD card, and displays live values on a 16×2 I2C LCD. Uses SPI (SD card), I2C (RTC + LCD), and single-wire (DHT11) protocols. Custom LCD characters for °C and % symbols.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">Arduino</span>
+                                <span class="project-tag">DHT11</span>
+                                <span class="project-tag">DS3231 RTC</span>
+                                <span class="project-tag">SD Card</span>
+                                <span class="project-tag">SPI / I2C</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 12 -->
+                    <a href="https://github.com/itsrashedhasan/RestoCafe_Java" target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">2023</p>
+                                <p class="project-type text-right">Java Desktop App</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                RestoCafe — Restaurant Management System
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                Java Swing restaurant management system with authentication, dashboard, orders, reservations, billing, and inventory modules.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">Swing</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">JDBC</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 15 — Clap Switch Nov 2023 -->
+                    <a href="https://github.com/itsrashedhasan/clap-switch" target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">Nov 2023</p>
+                                <p class="project-type text-right">Electronics · Arduino</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                Clap Switch — Sound-Activated Bulb
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                Arduino Uno R3 system that toggles an AC bulb on/off using clap sound detection via an LM393 sound sensor and 5V relay module. Boolean toggle logic with LED indicator. Bi-stable circuit using transistor flip-flop driving a relay to control AC power. Built with Team Tech Titans.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">Arduino</span>
+                                <span class="project-tag">LM393</span>
+                                <span class="project-tag">Relay</span>
+                                <span class="project-tag">Sound Detection</span>
+                                <span class="project-tag">C++</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 16 — Food Ordering System 2023 -->
+                    <a href="https://github.com/itsrashedhasan/food-ordering-system" target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                        <div class="project-card-glow"></div>
+
+                        <div class="relative z-10 flex h-full flex-col">
+                            <div class="mb-4 flex items-center justify-between gap-3">
+                                <p class="project-year-badge">2023</p>
+                                <p class="project-type text-right">C · Data Structures</p>
+                            </div>
+
+                            <h3 class="project-title text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                                Food Ordering System
+                            </h3>
+
+                            <p class="project-desc text-slate-700 dark:text-slate-400 mb-5">
+                                Multi-module console food ordering system in C using struct-based data modeling for user accounts and hotel menus. Secure signup with multi-rule password validation (uppercase, lowercase, digit, special character), email format parsing, 10-digit mobile verification, and tiered coupon discount system (10/20/30%). 650+ lines across 8+ functions.
+                            </p>
+
+                            <div class="mt-auto flex flex-wrap gap-2 text-xs">
+                                <span class="project-tag">C Language</span>
+                                <span class="project-tag">Structs</span>
+                                <span class="project-tag">Data Structures</span>
+                                <span class="project-tag">CLI</span>
+                                <span class="project-tag">Input Validation</span>
+                            </div>
+
+                            <div class="project-open-hint mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 dark:text-sky-400">
+                                View on GitHub <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
                         </div>
                     </a>
 
                 </div>
             </div>
-        </section>
 
-        <!-- Researcb -->
-        <section id="reachers" class="section py-24">
-            <div class="research-background"> </div>
-            <div class="max-w-7xl mx-auto px-4">
-                <h2 class="text-4xl font-bold text-center mb-12 text-slate-900 dark:text-white">My Research</h2>
-                <div class="grid md:grid-cols-2 gap-6">
+            <div class="project-carousel-dots" data-project-dots aria-label="Project carousel pagination"></div>
+        </div>
+    </div>
+</section>
 
-                    <!-- Paper 1: ITAI 2026 -->
-                    <a href="https://link.springer.com/series/15179" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <p class="text-xs text-sky-600 dark:text-sky-400 font-semibold mb-2 uppercase tracking-wide">
-                            ITAI 2026 · Springer LNNS · SCOPUS · USA</p>
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            Rule-Based Script Detection and Multilingual Topic Modeling for Low-Resource Bangladeshi
-                            Languages
-                        </h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">Training-free multilingual NLP framework for
-                            a 5-language Bangladesh parallel corpus (English, Bangla, Garo, Marma, Chakma). Hybrid
-                            Unicode + keyword lexicon detector achieved 97.22% macro accuracy. BERTopic with
-                            multilingual MiniLM embeddings discovered 13 conversational topics. Presented at Lasell
-                            University, Newton, Massachusetts, USA.</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-green-100 dark:bg-green-900/40 text-green-800 dark:text-green-300 font-semibold px-2.5 py-1 rounded-full">✓
-                                Accepted</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">SCOPUS
-                                Indexed</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Springer
-                                LNNS</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Conference
-                                Paper</span>
-                            <span
-                                class="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 font-semibold px-2.5 py-1 rounded-full">First
-                                Author</span>
+<!-- Research -->
+<section id="reachers" class="section py-24">
+    <div class="research-background"></div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="text-center mb-12">
+            <p class="text-sm font-semibold text-sky-600 dark:text-sky-400 uppercase tracking-wider mb-2">
+                Publications & Ongoing Work
+            </p>
+            <h2 class="text-4xl font-bold text-slate-900 dark:text-white">My Research</h2>
+            <p class="max-w-2xl mx-auto mt-4 text-slate-700 dark:text-slate-400">
+                Explore my accepted papers, thesis work, and active research. Use Abstract and BibTeX buttons
+                to view details directly on this page.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 max-w-5xl mx-auto">
+
+            <!-- Paper 1 -->
+            <article class="research-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                <div class="research-card-glow"></div>
+
+                <div class="relative z-10">
+                    <p class="text-xs text-sky-600 dark:text-sky-400 font-semibold mb-2 uppercase tracking-wide">
+                        ITAI 2026 · Springer LNNS · SCOPUS · USA
+                    </p>
+
+                    <h3 class="research-title text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                        Rule-Based Script Detection and Multilingual Topic Modeling for Low-Resource Bangladeshi Languages
+                    </h3>
+
+                    <p class="text-slate-700 dark:text-slate-400 mb-4 leading-relaxed">
+                        Training-free multilingual NLP framework for a 5-language Bangladesh parallel corpus
+                        using Unicode rules, keyword lexicons, and BERTopic-based topic modeling.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 text-xs mb-5">
+                        <span class="bg-green-100 dark:bg-green-900/40 text-green-800 dark:text-green-300 font-semibold px-2.5 py-1 rounded-full">✓ Accepted</span>
+                        <span class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">SCOPUS Indexed</span>
+                        <span class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Springer LNNS</span>
+                        <span class="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 font-semibold px-2.5 py-1 rounded-full">First Author</span>
+                    </div>
+
+                    <div class="research-action-row">
+                        <button type="button" class="research-action-btn" data-research-action="abstract">
+                            Abstract
+                        </button>
+
+                        <button type="button" class="research-action-btn" data-research-action="bibtex">
+                            BibTeX
+                        </button>
+
+                        <a href="https://link.springer.com/series/15179" target="_blank" rel="noopener noreferrer"
+                            class="research-link-btn">
+                            Paper Link →
+                        </a>
+                    </div>
+
+                    <div class="research-detail-panel">
+                        <div class="research-detail-header">
+                            <h4 class="research-detail-title">Research Details</h4>
+                            <button type="button" class="research-detail-close" data-research-close aria-label="Close details">
+                                ×
+                            </button>
                         </div>
-                    </a>
 
-                    <!-- Paper 2: ICCAD 2026 -->
-                    <a href="https://iccad-conf.org" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <p class="text-xs text-sky-600 dark:text-sky-400 font-semibold mb-2 uppercase tracking-wide">
-                            ICCAD 2026 · IEEE / IFAC · Lisbon, Portugal</p>
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            A Leakage-Aware Deep Learning Framework for Multi-Class Classification of Moringa Leaf
-                            Diseases Using CNN–Vision Transformer Architectures
-                        </h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">Benchmarks EfficientNet-B3, ConvNeXt-Tiny,
-                            ViT-B/16, Swin V2-Tiny, ResNet50, and MobileNetV3-Large on the MoringaLeafNet dataset. Best:
-                            EfficientNet-B3 at 91.78% accuracy, macro F1 92.56%, ROC-AUC 0.9853. Strict leakage-free
-                            grouped splitting and HSV-based leaf segmentation. International collaboration with Prince
-                            Sultan University (Saudi Arabia) and Cairo University (Egypt).</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-green-100 dark:bg-green-900/40 text-green-800 dark:text-green-300 font-semibold px-2.5 py-1 rounded-full">✓
-                                Accepted</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">IEEE
-                                Indexed</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">IFAC</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Conference
-                                Paper</span>
-                            <span
-                                class="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 font-semibold px-2.5 py-1 rounded-full">First
-                                Author</span>
+                        <div class="research-abstract-content">
+                            <h5>Abstract</h5>
+                            <p>
+                                This work presents a training-free multilingual NLP pipeline for low-resource
+                                Bangladeshi languages, focusing on script detection and topic modeling. The framework
+                                combines Unicode-range rules and keyword lexicons for language/script identification,
+                                followed by BERTopic with multilingual sentence embeddings to discover conversational
+                                topics from a 5-language parallel corpus including English, Bangla, Garo, Marma, and
+                                Chakma. The system achieved strong macro-level script detection performance and
+                                demonstrated practical usability for low-resource language analysis without requiring
+                                large supervised datasets.
+                            </p>
                         </div>
-                    </a>
 
-                    <!-- Paper 3: F²DG-nnU-Net (Thesis) -->
-                    <a href="https://github.com/itsrashedhasan/FDG-nnU-Net" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <p
-                            class="text-xs text-amber-600 dark:text-amber-400 font-semibold mb-2 uppercase tracking-wide">
-                            B.Sc. Thesis · Target: IEEE Transactions on Medical Imaging</p>
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            Privacy-Preserving Federated Domain Generalization for Multi-Centre Cardiac Cine MRI
-                            Segmentation (F²DG-nnU-Net)
-                        </h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">Novel federated learning framework built on
-                            nnU-Net v2 for LV/RV/MYO segmentation on the M&amp;Ms cardiac MRI dataset (4 vendors, 6
-                            centres). Combines client-level Fourier-amplitude fingerprint sharing (privacy-preserving),
-                            amplitude-mixing for synthetic domain augmentation, and boundary-weighted Jensen–Shannon
-                            consistency loss. Evaluated with leave-one-vendor-out and data-scarcity ablations.</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 font-semibold px-2.5 py-1 rounded-full">In
-                                Preparation</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Federated
-                                Learning</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Medical
-                                Imaging</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">PyTorch</span>
-                            <span
-                                class="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 font-semibold px-2.5 py-1 rounded-full">First
-                                Author</span>
+                        <div class="research-bibtex-content">
+                            <div class="research-bibtex-top">
+                                <h5>BibTeX</h5>
+                                <button type="button" class="research-copy-btn" data-copy-bibtex>
+                                    Copy BibTeX
+                                </button>
+                            </div>
+
+                            <pre><code>@inproceedings{shohan2026scriptdetection,
+  title     = {Rule-Based Script Detection and Multilingual Topic Modeling for Low-Resource Bangladeshi Languages},
+  author    = {Shohan, Rashedul Hasan and others},
+  booktitle = {Proceedings of ITAI 2026},
+  series    = {Lecture Notes in Networks and Systems},
+  publisher = {Springer},
+  year      = {2026},
+  note      = {Accepted}
+}</code></pre>
                         </div>
-                    </a>
-
-                    <!-- Paper 4: SR-FedCoDA -->
-                    <a href="https://github.com/itsrashedhasan/SR-FedCoDA" target="_blank"
-                        class="group block glass glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl transition overflow-hidden">
-                        <p
-                            class="text-xs text-amber-600 dark:text-amber-400 font-semibold mb-2 uppercase tracking-wide">
-                            Active Research · Target: IEEE Transactions on Medical Imaging</p>
-                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600">
-                            SR-FedCoDA: Federated Continual Domain Adaptation for Medical Image Segmentation
-                        </h3>
-                        <p class="text-slate-700 dark:text-slate-400 mb-4">Federated learning framework combining sparse
-                            regularization (reduces communication overhead, prevents client drift), co-training across
-                            federated clients, and domain adaptation for heterogeneous hospital imaging equipment.
-                            Addresses real-world non-IID data, domain shift, and privacy constraints (HIPAA/GDPR) in
-                            multi-institutional medical AI.</p>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span
-                                class="bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 font-semibold px-2.5 py-1 rounded-full">In
-                                Preparation</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Federated
-                                Learning</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Domain
-                                Adaptation</span>
-                            <span
-                                class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Privacy-Preserving
-                                ML</span>
-                            <span
-                                class="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 font-semibold px-2.5 py-1 rounded-full">First
-                                Author</span>
-                        </div>
-                    </a>
-
+                    </div>
                 </div>
+            </article>
+
+            <!-- Paper 2 -->
+            <article class="research-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                <div class="research-card-glow"></div>
+
+                <div class="relative z-10">
+                    <p class="text-xs text-sky-600 dark:text-sky-400 font-semibold mb-2 uppercase tracking-wide">
+                        ICCAD 2026 · IEEE / IFAC · Lisbon, Portugal
+                    </p>
+
+                    <h3 class="research-title text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                        A Leakage-Aware Deep Learning Framework for Multi-Class Classification of Moringa Leaf Diseases
+                    </h3>
+
+                    <p class="text-slate-700 dark:text-slate-400 mb-4 leading-relaxed">
+                        Deep learning framework benchmarking CNN and Vision Transformer architectures for
+                        Moringa leaf disease classification with leakage-free grouped splitting.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 text-xs mb-5">
+                        <span class="bg-green-100 dark:bg-green-900/40 text-green-800 dark:text-green-300 font-semibold px-2.5 py-1 rounded-full">✓ Accepted</span>
+                        <span class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">IEEE Indexed</span>
+                        <span class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">IFAC</span>
+                        <span class="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 font-semibold px-2.5 py-1 rounded-full">First Author</span>
+                    </div>
+
+                    <div class="research-action-row">
+                        <button type="button" class="research-action-btn" data-research-action="abstract">
+                            Abstract
+                        </button>
+
+                        <button type="button" class="research-action-btn" data-research-action="bibtex">
+                            BibTeX
+                        </button>
+
+                        <a href="https://iccad-conf.org" target="_blank" rel="noopener noreferrer"
+                            class="research-link-btn">
+                            Paper Link →
+                        </a>
+                    </div>
+
+                    <div class="research-detail-panel">
+                        <div class="research-detail-header">
+                            <h4 class="research-detail-title">Research Details</h4>
+                            <button type="button" class="research-detail-close" data-research-close aria-label="Close details">
+                                ×
+                            </button>
+                        </div>
+
+                        <div class="research-abstract-content">
+                            <h5>Abstract</h5>
+                            <p>
+                                This study introduces a leakage-aware deep learning framework for multi-class Moringa
+                                leaf disease classification. It benchmarks EfficientNet-B3, ConvNeXt-Tiny, ViT-B/16,
+                                Swin V2-Tiny, ResNet50, and MobileNetV3-Large on the MoringaLeafNet dataset. The
+                                pipeline applies strict grouped splitting to reduce data leakage and uses HSV-based
+                                leaf segmentation to focus model learning on disease-relevant regions. The best model,
+                                EfficientNet-B3, achieved strong classification performance with high accuracy, macro
+                                F1-score, and ROC-AUC.
+                            </p>
+                        </div>
+
+                        <div class="research-bibtex-content">
+                            <div class="research-bibtex-top">
+                                <h5>BibTeX</h5>
+                                <button type="button" class="research-copy-btn" data-copy-bibtex>
+                                    Copy BibTeX
+                                </button>
+                            </div>
+
+                            <pre><code>@inproceedings{shohan2026moringa,
+  title     = {A Leakage-Aware Deep Learning Framework for Multi-Class Classification of Moringa Leaf Diseases Using CNN--Vision Transformer Architectures},
+  author    = {Shohan, Rashedul Hasan and others},
+  booktitle = {Proceedings of ICCAD 2026},
+  publisher = {IEEE / IFAC},
+  year      = {2026},
+  note      = {Accepted}
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Paper 3 -->
+            <article class="research-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                <div class="research-card-glow"></div>
+
+                <div class="relative z-10">
+                    <p class="text-xs text-amber-600 dark:text-amber-400 font-semibold mb-2 uppercase tracking-wide">
+                        B.Sc. Thesis · Target: IEEE Transactions on Medical Imaging
+                    </p>
+
+                    <h3 class="research-title text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                        Privacy-Preserving Federated Domain Generalization for Multi-Centre Cardiac Cine MRI Segmentation
+                    </h3>
+
+                    <p class="text-slate-700 dark:text-slate-400 mb-4 leading-relaxed">
+                        F²DG-nnU-Net framework using nnU-Net v2, federated learning, Fourier amplitude mixing,
+                        and boundary-weighted consistency for cardiac MRI segmentation.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 text-xs mb-5">
+                        <span class="bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 font-semibold px-2.5 py-1 rounded-full">In Preparation</span>
+                        <span class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Federated Learning</span>
+                        <span class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Medical Imaging</span>
+                        <span class="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 font-semibold px-2.5 py-1 rounded-full">First Author</span>
+                    </div>
+
+                    <div class="research-action-row">
+                        <button type="button" class="research-action-btn" data-research-action="abstract">
+                            Abstract
+                        </button>
+
+                        <button type="button" class="research-action-btn" data-research-action="bibtex">
+                            BibTeX
+                        </button>
+
+                        <a href="https://github.com/itsrashedhasan/FDG-nnU-Net" target="_blank" rel="noopener noreferrer"
+                            class="research-link-btn">
+                            Repository →
+                        </a>
+                    </div>
+
+                    <div class="research-detail-panel">
+                        <div class="research-detail-header">
+                            <h4 class="research-detail-title">Research Details</h4>
+                            <button type="button" class="research-detail-close" data-research-close aria-label="Close details">
+                                ×
+                            </button>
+                        </div>
+
+                        <div class="research-abstract-content">
+                            <h5>Abstract</h5>
+                            <p>
+                                This thesis proposes F²DG-nnU-Net, a privacy-preserving federated domain
+                                generalization framework for multi-centre cardiac cine MRI segmentation. Built on
+                                nnU-Net v2, the method targets LV, RV, and MYO segmentation on the M&amp;Ms dataset
+                                under multi-vendor and multi-centre domain shift. It combines client-level
+                                low-frequency Fourier amplitude fingerprint sharing, amplitude-mixing based synthetic
+                                domain augmentation, and boundary-weighted Jensen–Shannon consistency to improve
+                                robustness across unseen vendors and centres without sharing raw images.
+                            </p>
+                        </div>
+
+                        <div class="research-bibtex-content">
+                            <div class="research-bibtex-top">
+                                <h5>BibTeX</h5>
+                                <button type="button" class="research-copy-btn" data-copy-bibtex>
+                                    Copy BibTeX
+                                </button>
+                            </div>
+
+                            <pre><code>@misc{shohan2026f2dgnnunet,
+  title        = {Privacy-Preserving Federated Domain Generalization for Multi-Centre Cardiac Cine MRI Segmentation},
+  author       = {Shohan, Rashedul Hasan},
+  year         = {2026},
+  howpublished = {B.Sc. Thesis, Daffodil International University},
+  note         = {Manuscript in preparation}
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Paper 4 -->
+            <article class="research-card group glass glass-card rounded-2xl p-6 shadow-lg overflow-hidden">
+                <div class="research-card-glow"></div>
+
+                <div class="relative z-10">
+                    <p class="text-xs text-amber-600 dark:text-amber-400 font-semibold mb-2 uppercase tracking-wide">
+                        Active Research · Target: IEEE Transactions on Medical Imaging
+                    </p>
+
+                    <h3 class="research-title text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400">
+                        SR-FedCoDA: Federated Continual Domain Adaptation for Medical Image Segmentation
+                    </h3>
+
+                    <p class="text-slate-700 dark:text-slate-400 mb-4 leading-relaxed">
+                        Federated medical imaging framework combining sparse regularization, co-training,
+                        and domain adaptation for heterogeneous clinical imaging environments.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 text-xs mb-5">
+                        <span class="bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 font-semibold px-2.5 py-1 rounded-full">In Preparation</span>
+                        <span class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Federated Learning</span>
+                        <span class="bg-sky-100 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 font-semibold px-2.5 py-1 rounded-full">Domain Adaptation</span>
+                        <span class="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 font-semibold px-2.5 py-1 rounded-full">First Author</span>
+                    </div>
+
+                    <div class="research-action-row">
+                        <button type="button" class="research-action-btn" data-research-action="abstract">
+                            Abstract
+                        </button>
+
+                        <button type="button" class="research-action-btn" data-research-action="bibtex">
+                            BibTeX
+                        </button>
+
+                        <a href="https://github.com/itsrashedhasan/SR-FedCoDA" target="_blank" rel="noopener noreferrer"
+                            class="research-link-btn">
+                            Repository →
+                        </a>
+                    </div>
+
+                    <div class="research-detail-panel">
+                        <div class="research-detail-header">
+                            <h4 class="research-detail-title">Research Details</h4>
+                            <button type="button" class="research-detail-close" data-research-close aria-label="Close details">
+                                ×
+                            </button>
+                        </div>
+
+                        <div class="research-abstract-content">
+                            <h5>Abstract</h5>
+                            <p>
+                                SR-FedCoDA explores federated continual domain adaptation for medical image
+                                segmentation under heterogeneous hospital data distributions. The framework combines
+                                sparse regularization to reduce communication overhead and prevent client drift,
+                                co-training across federated clients, and domain adaptation strategies for
+                                non-IID imaging environments. It is designed for privacy-preserving multi-institutional
+                                medical AI where raw clinical data cannot be centralized due to regulatory and ethical
+                                constraints.
+                            </p>
+                        </div>
+
+                        <div class="research-bibtex-content">
+                            <div class="research-bibtex-top">
+                                <h5>BibTeX</h5>
+                                <button type="button" class="research-copy-btn" data-copy-bibtex>
+                                    Copy BibTeX
+                                </button>
+                            </div>
+
+                            <pre><code>@misc{shohan2026srfedcoda,
+  title        = {SR-FedCoDA: Federated Continual Domain Adaptation for Medical Image Segmentation},
+  author       = {Shohan, Rashedul Hasan},
+  year         = {2026},
+  howpublished = {Research manuscript in preparation},
+  note         = {Active research}
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS & ACTIVITIES -->
+<section id="achievements" class="section py-24 bg-slate-50 dark:bg-slate-800/40">
+    <div class="achievements-background"></div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="text-center mb-14">
+            <p class="text-sm font-semibold text-sky-600 dark:text-sky-400 uppercase tracking-wider mb-2">
+                Beyond Academics
+            </p>
+            <h2 class="text-4xl font-bold text-slate-900 dark:text-white">
+                Achievements & Activities
+            </h2>
+            <p class="max-w-2xl mx-auto mt-4 text-slate-700 dark:text-slate-400">
+                A curated collection of my extra-curricular involvement, course certificates,
+                workshops, events, leadership activities, and professional learning milestones.
+            </p>
+        </div>
+
+        <!-- Summary Cards -->
+        <div class="achievement-summary-grid">
+            <div class="achievement-summary-card glass glass-card">
+                <div class="achievement-summary-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6l4 2m5-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <p class="achievement-summary-number">15+</p>
+                <p class="achievement-summary-label">Workshops & Events</p>
             </div>
-        </section>
+
+            <div class="achievement-summary-card glass glass-card">
+                <div class="achievement-summary-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <p class="achievement-summary-number">10+</p>
+                <p class="achievement-summary-label">Course Certificates</p>
+            </div>
+
+            <div class="achievement-summary-card glass glass-card">
+                <div class="achievement-summary-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M18 18.72a9.094 9.094 0 003.75.78M18 18.72a9.094 9.094 0 01-3.75.78M18 18.72V16.5m-12 2.22a9.094 9.094 0 003.75.78M6 18.72a9.094 9.094 0 01-3.75.78M6 18.72V16.5m12 0a3 3 0 10-6 0m6 0H6m0 0a3 3 0 116 0" />
+                    </svg>
+                </div>
+                <p class="achievement-summary-number">3+</p>
+                <p class="achievement-summary-label">Leadership Roles</p>
+            </div>
+
+            <div class="achievement-summary-card glass glass-card">
+                <div class="achievement-summary-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M16.5 18.75h-9m9 0a3 3 0 003-3v-7.5a3 3 0 00-3-3h-9a3 3 0 00-3 3v7.5a3 3 0 003 3m9 0v1.5a.75.75 0 01-.75.75h-7.5a.75.75 0 01-.75-.75v-1.5" />
+                    </svg>
+                </div>
+                <p class="achievement-summary-number">5+</p>
+                <p class="achievement-summary-label">Academic Activities</p>
+            </div>
+        </div>
+
+        <!-- Main Achievement Cards -->
+        <div class="achievement-card-grid mt-10">
+
+            <!-- Card 1 -->
+            <article class="achievement-card glass glass-card">
+                <div class="achievement-card-top">
+                    <div class="achievement-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m-5-3l5 3 5-3" />
+                        </svg>
+                    </div>
+                    <span class="achievement-badge">Course Certificate</span>
+                </div>
+
+                <h3>Professional Course Certifications</h3>
+                <p>
+                    Completed structured courses and learning programs related to programming,
+                    web development, AI/ML, data science, research, and software engineering.
+                </p>
+
+                <div class="achievement-tags">
+                    <span>AI / ML</span>
+                    <span>Web Development</span>
+                    <span>Programming</span>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="achievement-card glass glass-card">
+                <div class="achievement-card-top">
+                    <div class="achievement-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                        </svg>
+                    </div>
+                    <span class="achievement-badge">Event Certificate</span>
+                </div>
+
+                <h3>Workshops, Seminars & Events</h3>
+                <p>
+                    Participated in academic events, technical seminars, research workshops,
+                    career sessions, and university-level professional development programs.
+                </p>
+
+                <div class="achievement-tags">
+                    <span>Workshop</span>
+                    <span>Seminar</span>
+                    <span>Conference</span>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="achievement-card glass glass-card">
+                <div class="achievement-card-top">
+                    <div class="achievement-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M18 18.72a9.094 9.094 0 003.75.78M18 18.72a9.094 9.094 0 01-3.75.78M18 18.72V16.5m-12 2.22a9.094 9.094 0 003.75.78M6 18.72a9.094 9.094 0 01-3.75.78M6 18.72V16.5m12 0a3 3 0 10-6 0m6 0H6m0 0a3 3 0 116 0" />
+                        </svg>
+                    </div>
+                    <span class="achievement-badge">Leadership</span>
+                </div>
+
+                <h3>Leadership & Lab Activities</h3>
+                <p>
+                    Contributed to research lab activities, academic coordination, team communication,
+                    event planning, mentoring, and collaborative student engagement.
+                </p>
+
+                <div class="achievement-tags">
+                    <span>Leadership</span>
+                    <span>Coordination</span>
+                    <span>Mentoring</span>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="achievement-card glass glass-card">
+                <div class="achievement-card-top">
+                    <div class="achievement-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5.16 14.34a2.25 2.25 0 00-.659 1.591v2.819A2.25 2.25 0 007.409 21h9.182a2.25 2.25 0 002.25-2.25v-2.819a2.25 2.25 0 00-.659-1.591l-3.931-3.931a2.25 2.25 0 01-.659-1.591V3.104" />
+                        </svg>
+                    </div>
+                    <span class="achievement-badge">Research Activity</span>
+                </div>
+
+                <h3>Research & Publication Support</h3>
+                <p>
+                    Engaged in literature review, dataset analysis, manuscript preparation,
+                    LaTeX writing, experiment planning, and academic research documentation.
+                </p>
+
+                <div class="achievement-tags">
+                    <span>Research</span>
+                    <span>Writing</span>
+                    <span>Publication</span>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="achievement-card glass glass-card">
+                <div class="achievement-card-top">
+                    <div class="achievement-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.456-2.456L14.25 6l1.035-.259a3.375 3.375 0 002.456-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z" />
+                        </svg>
+                    </div>
+                    <span class="achievement-badge">Creative Work</span>
+                </div>
+
+                <h3>Design & Creative Activities</h3>
+                <p>
+                    Practiced UI/UX design, graphic design, branding, interface prototyping,
+                    and creative visual communication through academic and freelance activities.
+                </p>
+
+                <div class="achievement-tags">
+                    <span>Figma</span>
+                    <span>UI/UX</span>
+                    <span>Graphics</span>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="achievement-card glass glass-card">
+                <div class="achievement-card-top">
+                    <div class="achievement-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 18.75l-7.5 2.25 2.25-7.5L3 9.75l7.5-.75L12 2.25 13.5 9l7.5.75-3.75 3.75 2.25 7.5L12 18.75z" />
+                        </svg>
+                    </div>
+                    <span class="achievement-badge">Extra-Curricular</span>
+                </div>
+
+                <h3>Extra-Curricular Engagement</h3>
+                <p>
+                    Took part in student activities, teamwork-based events, volunteering,
+                    communication-based tasks, and personal development initiatives.
+                </p>
+
+                <div class="achievement-tags">
+                    <span>Teamwork</span>
+                    <span>Volunteering</span>
+                    <span>Community</span>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Certificate Note -->
+        <div class="achievement-note glass glass-card mt-10">
+            <div>
+                <h3>Certificate Gallery Coming Soon</h3>
+                <p>
+                    Course certificates, event certificates, workshop certificates, and participation documents
+                    can be added here later with images, links, or verification buttons.
+                </p>
+            </div>
+
+            <a href="#contact" class="achievement-note-link nav-link">
+                Ask About My Activities
+                <span>→</span>
+            </a>
+
+
+        </div>
+    </div>
+
+
+
+</section>
 
         <!-- SERVICES -->
         <section id="services" class="section py-24 bg-slate-200 dark:bg-slate-800/100">
@@ -1204,10 +1940,10 @@
     <!-- FOOTER -->
     <footer class="bg-slate-100 dark:bg-slate-900 border-t border-slate-200/60 dark:border-slate-800/60">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid md:grid-cols-4 gap-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
 
                 <!-- Contact Section -->
-                <div>
+                <div class="col-span-2 md:col-span-1">
                     <div class="text-2xl font-extrabold text-slate-900 dark:text-white">
                         Shohan<span class="text-sky-500">.</span>
                     </div>
@@ -1269,7 +2005,8 @@
                 </nav>
 
                 <!-- Social Media Links Section -->
-                <div>
+                <!-- Social Media Links Section -->
+<div class="col-span-2 md:col-span-1">
                     <h3 class="font-semibold text-slate-900 dark:text-white mb-3">Follow Me</h3>
                     <div class="flex gap-3">
                         <!-- GitHub -->
