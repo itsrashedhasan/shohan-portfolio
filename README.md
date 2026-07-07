@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Shohan Portfolio Preview](https://raw.githubusercontent.com/itsrashedhasan/shohan-portfolio/main/assets/images/preview.PNG)
+![Shohan Portfolio Preview](https://raw.githubusercontent.com/itsrashedhasan/shohan-portfolio/main/assets/images/og-image.png)
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Portfolio-sky?style=for-the-badge&logo=github)](https://itsrashedhasan.github.io/shohan-portfolio/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/itsrashedhasan)
