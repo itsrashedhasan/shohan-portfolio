@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0ea5e9" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <title>Rashedul Hasan Shohan | AI/ML Researcher, Full-Stack Developer & UI/UX Designer</title>
+    <title>Rashedul Hasan Shohan | AI/ML Researcher & Full-Stack Developer</title>
 
     <meta name="description"
-    content="Official portfolio of Rashedul Hasan Shohan, a CSE student, AI/ML researcher, full-stack developer, UI/UX designer, and medical AI researcher from Bangladesh. Explore projects, research, skills, publications, achievements, and contact information.">
+    content="Official portfolio of Rashedul Hasan Shohan — AI/ML researcher, full-stack developer, UI/UX designer, and CSE student from Bangladesh. Explore projects, research, skills, achievements, and contact.">
 
 <meta name="keywords"
     content="Rashedul Hasan Shohan, Shohan portfolio, AI ML researcher Bangladesh, full stack developer Bangladesh, UI UX designer, medical AI researcher, federated learning, machine learning, Daffodil International University, CSE portfolio">
@@ -25,9 +27,10 @@
     <meta property="og:title" content="Rashedul Hasan Shohan | AI/ML Researcher &amp; Full-Stack Developer">
     <meta property="og:description" content="Portfolio of Rashedul Hasan Shohan — AI/ML researcher, full-stack developer, and UI/UX designer from Bangladesh. 2× first-author papers in Springer LNNS (SCOPUS) and IEEE ICCAD 2026. BSc CSE, Daffodil International University.">
     <meta property="og:url" content="https://itsrashedhasan.github.io/shohan-portfolio/">
-    <meta property="og:image" content="https://itsrashedhasan.github.io/shohan-portfolio/assets/images/preview.PNG">
+    <meta property="og:image" content="https://itsrashedhasan.github.io/shohan-portfolio/assets/images/og-image.png?v=1">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
     <meta property="og:image:alt" content="Rashedul Hasan Shohan — AI/ML Researcher and Full-Stack Developer Portfolio">
     <meta property="og:site_name" content="Rashedul Hasan Shohan Portfolio">
     <meta property="og:locale" content="en_US">
@@ -36,7 +39,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Rashedul Hasan Shohan | AI/ML Researcher &amp; Full-Stack Developer">
     <meta name="twitter:description" content="AI/ML researcher from Bangladesh. First author at Springer LNNS (ITAI 2026) and IEEE ICCAD 2026. Federated learning, medical imaging, full-stack development.">
-    <meta name="twitter:image" content="https://itsrashedhasan.github.io/shohan-portfolio/assets/images/preview.PNG">
+    <meta name="twitter:image" content="https://itsrashedhasan.github.io/shohan-portfolio/assets/images/og-image.png?v=1">
     <meta name="twitter:image:alt" content="Rashedul Hasan Shohan Portfolio Preview">
 
     <!-- ═══════════════ JSON-LD: ProfilePage + Person ═══════════════ -->
@@ -49,6 +52,7 @@
         "url": "https://itsrashedhasan.github.io/shohan-portfolio/",
         "mainEntity": {
             "@type": "Person",
+            "@id": "https://itsrashedhasan.github.io/shohan-portfolio/#person",
             "name": "Rashedul Hasan Shohan",
             "alternateName": ["Shohan", "Rashed Hasan", "Rashedul Hasan"],
             "url": "https://itsrashedhasan.github.io/shohan-portfolio/",
@@ -99,6 +103,30 @@
                     "datePublished": "2026",
                     "url": "https://iccad-conf.org",
                     "keywords": "deep learning, EfficientNet, ViT, Moringa leaf disease, leakage-aware classification"
+                },
+                {
+                    "@type": "ScholarlyArticle",
+                    "name": "Fine-Tuned CNN-Based Approach for Multi-Class Mango Leaf Disease Detection",
+                    "publisher": { "@type": "Organization", "name": "arXiv" },
+                    "datePublished": "2025",
+                    "url": "https://arxiv.org/abs/2510.05326",
+                    "keywords": "CNN, transfer learning, mango leaf disease, plant disease detection"
+                },
+                {
+                    "@type": "Thesis",
+                    "name": "Privacy-Preserving Federated Domain Generalization for Multi-Centre Cardiac Cine MRI Segmentation (F²DG-nnU-Net)",
+                    "publisher": { "@type": "CollegeOrUniversity", "name": "Daffodil International University" },
+                    "datePublished": "2026",
+                    "url": "https://github.com/itsrashedhasan/FDG-nnU-Net",
+                    "keywords": "federated learning, cardiac MRI, domain generalization, nnU-Net, medical image segmentation"
+                },
+                {
+                    "@type": "ScholarlyArticle",
+                    "name": "SR-FedCoDA: Federated Continual Domain Adaptation for Medical Image Segmentation",
+                    "publisher": { "@type": "Organization", "name": "In Preparation — Target: IEEE Transactions on Medical Imaging" },
+                    "datePublished": "2026",
+                    "url": "https://github.com/itsrashedhasan/SR-FedCoDA",
+                    "keywords": "federated learning, domain adaptation, medical image segmentation, sparse regularization"
                 }
             ],
             "sameAs": [
@@ -221,7 +249,7 @@
                     class="nav-link text-slate-700 dark:text-slate-300 hover:text-sky-600">Education</a>
                 <a href="#projects" class="nav-link text-slate-700 dark:text-slate-300 hover:text-sky-600">Projects</a>
                 <a href="#reachers" class="nav-link text-slate-700 dark:text-slate-300 hover:text-sky-600">Research</a>
-                <!-- <a href="#achievements" class="nav-link text-slate-700 dark:text-slate-300 hover:text-sky-600">Achievements</a> -->
+                
                 
                 <a href="#services" class="nav-link text-slate-700 dark:text-slate-300 hover:text-sky-600">Services</a>
                 <a href="#blog" class="nav-link text-slate-700 dark:text-slate-300 hover:text-sky-600">Blog</a>
@@ -258,7 +286,7 @@
                 <a href="#projects" class="nav-link py-2">Projects</a>
 
                 <a href="#reachers" class="nav-link py-2">Research</a>
-                <a href="#achievements" class="nav-link py-2">Achievements</a>
+                
                 
                 <a href="#services" class="nav-link py-2">Services</a>
                 <a href="#blog" class="nav-link py-2">Blog</a>
@@ -287,7 +315,7 @@
                         Computer Science & Engineering at Daffodil International University.
                     </p>
                     <div class="mt-8 flex justify-center md:justify-start gap-4">
-                        <a href="https://github.com/itsrashedhasan" target="_blank"
+                        <a href="https://github.com/itsrashedhasan" target="_blank" rel="noopener noreferrer"
                             class="nav-link bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-sky-700 transition">View
                             GitHub</a>
                         <a href="#contact"
@@ -2147,7 +2175,7 @@
 
                     <article class="glass glass-card rounded-2xl p-6 shadow-lg border border-slate-200/60 dark:border-slate-700/40">
                         <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">How can I contact Rashedul Hasan Shohan?</h3>
-                        <p class="text-slate-700 dark:text-slate-400 leading-relaxed">You can reach him via email at <a href="mailto:iamrashedhasan@gmail.com" class="text-sky-600 font-semibold hover:underline">iamrashedhasan@gmail.com</a>, through the contact form below, or on <a href="https://linkedin.com/in/itsrashedhasan" target="_blank" class="text-sky-600 font-semibold hover:underline">LinkedIn</a> and <a href="https://github.com/itsrashedhasan" target="_blank" class="text-sky-600 font-semibold hover:underline">GitHub</a>.</p>
+                        <p class="text-slate-700 dark:text-slate-400 leading-relaxed">You can reach him via email at <a href="mailto:iamrashedhasan@gmail.com" class="text-sky-600 font-semibold hover:underline">iamrashedhasan@gmail.com</a>, through the contact form below, or on <a href="https://linkedin.com/in/itsrashedhasan" target="_blank" rel="noopener noreferrer" class="text-sky-600 font-semibold hover:underline">LinkedIn</a> and <a href="https://github.com/itsrashedhasan" target="_blank" rel="noopener noreferrer" class="text-sky-600 font-semibold hover:underline">GitHub</a>.</p>
                     </article>
 
                 </div>
@@ -2218,7 +2246,7 @@
                         Shohan<span class="text-sky-500">.</span>
                     </div>
                     <p class="mt-3 text-sm text-slate-600 dark:text-slate-400">
-                        <a href="https://maps.app.goo.gl/aRu7wvUrz1vC8VHu9" target="_blank" class="hover:text-blue-500">
+                        <a href="https://maps.app.goo.gl/aRu7wvUrz1vC8VHu9" target="_blank" rel="noopener noreferrer" class="hover:text-blue-500">
                             YKSG-1, DSC, DIU, Dhaka, Bangladesh
                         </a>
                     </p>

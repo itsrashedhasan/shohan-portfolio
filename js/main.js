@@ -471,7 +471,7 @@ const legalContent = {
                 <li><a href="#skills" onclick="closeLegalModal()">Skills</a></li>
                 <li><a href="#education" onclick="closeLegalModal()">Education</a></li>
                 <li><a href="#projects" onclick="closeLegalModal()">Projects</a></li>
-                <li><a href="#research" onclick="closeLegalModal()">Research</a></li>
+                <li><a href="#reachers" onclick="closeLegalModal()">Research</a></li>
                 <li><a href="#services" onclick="closeLegalModal()">Services</a></li>
                 <li><a href="#blog" onclick="closeLegalModal()">Blog</a></li>
                 <li><a href="#contact" onclick="closeLegalModal()">Contact</a></li>
